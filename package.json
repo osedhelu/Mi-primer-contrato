@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "compile": "npx truffle compile",
-    "local-chain": "export NODE_OPTIONS=--openssl-legacy-provider && npx ganache-cli --deterministic",
-    "migrate": "npx truffle migrate --network development",
-    "console": "npx truffle console --network development"
+    "local-chain": "npx ganache-cli --deterministic -p 5000 -h 0.0.0.0",
+    "migrate": "npx truffle migrate --network testnet",
+    "console": "npx truffle console --network testnet"
   },
   "author": "",
   "license": "ISC",
